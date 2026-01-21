@@ -65,6 +65,7 @@ Now, open the .env.local file you created in your code editor. It will look like
 # .env.local
 MONGODB_URI=your_mongodb_connection_string_here
 NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_SHOPIFY_STORE_URL=your-store.myshopify.com
 
 Replace your_mongodb_connection_string_here with the string you copied from MongoDB Atlas.
 
@@ -94,3 +95,15 @@ You should see output indicating that the server has started successfully.
 You can now open your web browser and navigate to http://localhost:3000 to see your application running live!
 
 You have now successfully set up the Skincare Consultation System on your local machine. You can start exploring the code, making changes, and testing the features.
+
+## 📚 Documentation
+
+All project documentation is available in the [`docs/`](./docs/) folder:
+
+- **[Complete Requirements](./docs/COMPLETE_RECOMMENDATION_REQUIREMENTS.md)** - Implementation plan and requirements
+- **[Database Schema](./docs/DATABASE_SCHEMA.md)** - Database schema documentation
+- **[Excel Template](./docs/EXCEL_TEMPLATE_REQUIREMENTS.md)** - Data import template requirements
+- **[Shopify Setup](./docs/SHOPIFY_API_SETUP_GUIDE.md)** - Shopify integration guide
+- **[Implementation Status](./docs/TODO_LIST_STATUS.md)** - Current implementation status
+
+See the [docs/README.md](./docs/README.md) for a complete documentation index.

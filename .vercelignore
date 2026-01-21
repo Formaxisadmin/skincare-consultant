@@ -1,0 +1,27 @@
+# Deployment ignore file for Vercel
+# Excludes tools and non-production files from deployment
+
+# Data upload tool (Python scripts, not needed in production)
+data-upload/
+
+# Product coverage analysis tool (testing/analysis tool, not needed in production)
+product-coverage-analysis/
+
+# Documentation (keep in repo but not needed in production build)
+docs/
+DEPLOYMENT.md
+
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Reports and analysis outputs (keep structure but exclude content)
+**/reports/
+*.txt
+data-upload/**/*.csv
+data-upload/**/*.xlsx
+
+# Environment example files (actual .env files are gitignored anyway)
+.env.example
+

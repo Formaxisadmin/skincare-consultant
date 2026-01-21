@@ -59,7 +59,7 @@ const concernMapping = {
     name: 'Anti-Aging & Fine Lines',
     description: 'Fine lines, wrinkles, loss of firmness, or aging prevention',
     requiredCategories: ['cleanser', 'serum', 'moisturizer', 'spf'],
-    optionalCategories: ['eye-cream', 'mask'],
+    optionalCategories: ['eye_cream', 'mask'],
     keyIngredients: [
       'retinol',
       'retinaldehyde',
@@ -76,8 +76,8 @@ const concernMapping = {
       spf: { type: 'high-protection', 'anti-aging': true },
     },
     routine: {
-      morning: ['cleanser', 'serum', 'eye-cream', 'moisturizer', 'spf'],
-      evening: ['cleanser', 'serum', 'eye-cream', 'moisturizer'],
+      morning: ['cleanser', 'serum', 'eye_cream', 'moisturizer', 'spf'],
+      evening: ['cleanser', 'serum', 'eye_cream', 'moisturizer'],
       weekly: ['mask'],
     },
   },
@@ -190,7 +190,7 @@ const concernMapping = {
   'dark-circles': {
     name: 'Dark Circles & Under-Eye',
     description: 'Dark circles, puffiness, or fine lines around eyes',
-    requiredCategories: ['eye-cream'],
+    requiredCategories: ['eye_cream'],
     optionalCategories: ['serum'],
     keyIngredients: [
       'caffeine',
@@ -201,11 +201,11 @@ const concernMapping = {
     ],
     avoidIngredients: ['harsh-acids', 'strong-retinoids'],
     productPreferences: {
-      'eye-cream': { focus: 'brightening', texture: 'light' },
+      'eye_cream': { focus: 'brightening', texture: 'light' },
     },
     routine: {
-      morning: ['eye-cream'],
-      evening: ['eye-cream'],
+      morning: ['eye_cream'],
+      evening: ['eye_cream'],
     },
   },
   'large-pores': {
@@ -317,7 +317,7 @@ const concernPriorityModifiers = {
 // --- 2. EXPORT YOUR MODULES AT THE END ---
 // This makes it clear what this file provides to other parts of your app.
 
-module.exports = {
+export {
   concernMapping,
   concernPriorityModifiers,
 };
